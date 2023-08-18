@@ -15,7 +15,7 @@ struct Personage {
     let species: Species
     let type: String
     let gender: Gender
-    let origin: Origin
+    let origin: Origin?
     let episodes: [Episode]
 }
 
@@ -43,11 +43,13 @@ enum Status: String {
 enum Species: String {
     case human = "Human"
     case alien = "Alien"
+    case unknown = "unknown"
 }
 
 enum Gender: String {
     case male = "Male"
     case female = "Female"
+    case unknown = "unknown"
 }
 
 // MARK: Keys
