@@ -18,7 +18,7 @@ struct MainView: View {
                 LazyVGrid(columns: [GridItem(), GridItem()], spacing: 14) {
                     ForEach(viewModel.personages, id: \.id) { personage in
                         NavigationLink {
-                            DetailView().navigationBarBackButtonHidden(true)
+                            DetailView(personage: personage).navigationBarBackButtonHidden(true)
                         } label: {
                             PersonageCard(personage: personage)
                         }

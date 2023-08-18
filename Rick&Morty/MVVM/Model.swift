@@ -25,7 +25,7 @@ struct Origin {
     let type: String
 }
 
-struct Episode {
+struct Episode: Hashable {
     let id: Int
     let name: String
     let airDate: String

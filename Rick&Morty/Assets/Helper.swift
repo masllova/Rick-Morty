@@ -23,6 +23,7 @@ extension Color {
 
 extension Image {
     static let planet = Image("Planet")
+    static let chevron = Image("Chevron")
 }
 
 // MARK: - font
@@ -31,7 +32,7 @@ extension Font {
     static let detailTitle = Font.custom("Gilroy-Bold", size: 22)
     static let navTitle = Font.custom("Gilroy-Bold", size: 28)
     static let originalTitle = Font.custom("Gilroy-Semibold", size: 17)
-    static let subTitle = Font.custom("Gilroy-Semibold", size: 16)
+    static let subTitle = Font.custom("Gilroy-Medium", size: 16)
     static let description = Font.custom("Gilroy-Medium", size: 13)
     static let date = Font.custom("Gilroy-Medium", size: 12)
 }
