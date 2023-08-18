@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class ViewModel: ObservableObject {
+    let manager = NetworkingManager()
+    @Published var personages = [Personage]()
+    
+    func fetchPersonages() {
+        manager.loadPersonages { [weak self] loadedPersonages in
+            if let loadedPersonages = loadedPersonages {
+                self?.personages = loadedPersonages
+            } else {
+                print("Error with fetch personages")
+            }
+        }
+    }
+    
+    
+}

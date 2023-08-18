@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class NetworkingManager {
         
-    func loadPersonages(from url: URL, completion: @escaping ([Personage]?) -> Void) {
+    func loadPersonages(completion: @escaping ([Personage]?) -> Void) {
         AF.request(url).responseJSON { response in
             switch response.result {
             case .success(let value):
@@ -133,4 +133,5 @@ class NetworkingManager {
         }
     }
 
+    private let url = URL(string: "https://rickandmortyapi.com/api/character")!
 }

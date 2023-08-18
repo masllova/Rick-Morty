@@ -8,26 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    let m = NetworkingManager()
+    @ObservedObject var viewModel = ViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-                .onTapGesture {
-                    m.loadPersonages(from: URL(string: "https://rickandmortyapi.com/api/character")!) { personages in
-                        if let loadedPersonages = personages {
-                            for personage in loadedPersonages {
-                                print("\(personage.name) id: \(personage.id)")
-                            }
-                        } else {
-                            print("ooops")
-                        }
-                    }
-                }
+            List(viewModel.personages, id: \.id) { personage in
+                // Отображение информации о персонаже
+                Text(personage.name)
+                
+            }
         }
-        .padding()
+        .onAppear {
+            viewModel.fetchPersonages()
+            print(viewModel.personages)
+        }
     }
 }
 
