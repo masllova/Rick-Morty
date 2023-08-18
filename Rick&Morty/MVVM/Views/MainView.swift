@@ -12,24 +12,22 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-        VStack {
-            header
-            ScrollView {
-                LazyVGrid(columns: [GridItem(), GridItem()], spacing: 14) {
-                    ForEach(viewModel.personages, id: \.id) { personage in
-                        NavigationLink {
-                            DetailView(personage: personage).navigationBarBackButtonHidden(true)
-                        } label: {
-                            PersonageCard(personage: personage)
+            VStack {
+                header
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(), GridItem()], spacing: 14) {
+                        ForEach(viewModel.personages, id: \.id) { personage in
+                            NavigationLink {
+                                DetailView(personage: personage).navigationBarBackButtonHidden(true)
+                            } label: {
+                                PersonageCard(personage: personage)
+                            }
                         }
-                        
-                        
-                    }
-                }.padding(20)
-            }
-            .onAppear { viewModel.fetchPersonages() }
-        } .background(Color.darkBackground)
-    }
+                    }.padding(20)
+                }
+                .onAppear { viewModel.fetchPersonages() }
+            } .background(Color.darkBackground)
+        }
     }
     
     var header: some View {

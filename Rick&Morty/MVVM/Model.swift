@@ -51,21 +51,3 @@ enum Gender: String {
     case female = "Female"
     case unknown = "unknown"
 }
-
-// MARK: Keys
-
-enum Keys {
-    case results
-    case id
-    case name
-    case image
-    case status
-    case species
-    case type
-    case gender
-    case origin
-    case episodes
-    case episode
-    case residents
-    case air_date
-}

@@ -23,7 +23,6 @@ struct DetailView: View {
                     originPanel
                     createTitle(by: LabelsCollection.episodes)
                     episodesPanel
-                    Spacer()
                 }
             }.padding(.horizontal, 24)
         }
@@ -165,9 +164,7 @@ struct DetailView: View {
         clearStr += LabelsCollection.season
         if numbers[2] != 0 { clearStr += String(numbers[2]) }
         clearStr += String(numbers[3])
-       
+        
         return clearStr
     }
-
-   
 }

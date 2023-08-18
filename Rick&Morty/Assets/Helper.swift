@@ -11,8 +11,8 @@ import SwiftUI
 // MARK: - colors
 
 extension Color {
-   static let darkBackground = Color("DarkBackground")
-   static let lightBackground = Color("LightBackground")
+    static let darkBackground = Color("DarkBackground")
+    static let lightBackground = Color("LightBackground")
     static let label = Color("Label")
     static let subLabel = Color("SubLabel")
     static let description = Color("Description")
