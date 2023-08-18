@@ -15,6 +15,7 @@ class ViewModel: ObservableObject {
         manager.loadPersonages { [weak self] loadedPersonages in
             if let loadedPersonages = loadedPersonages {
                 self?.personages = loadedPersonages
+                self?.personages.sort { $0.id < $1.id }
             }
         }
     }
