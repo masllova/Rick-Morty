@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3365A8612A8EBE07001CE30B /* Rick_MortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365A8602A8EBE07001CE30B /* Rick_MortyApp.swift */; };
-		3365A8632A8EBE07001CE30B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365A8622A8EBE07001CE30B /* ContentView.swift */; };
+		3365A8632A8EBE07001CE30B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365A8622A8EBE07001CE30B /* MainView.swift */; };
 		3365A8652A8EBE08001CE30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3365A8642A8EBE08001CE30B /* Assets.xcassets */; };
 		3365A8682A8EBE08001CE30B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3365A8672A8EBE08001CE30B /* Preview Assets.xcassets */; };
 		3365A8702A8EBEA5001CE30B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3365A86F2A8EBEA5001CE30B /* Alamofire */; };
@@ -20,12 +20,15 @@
 		3365A8842A8ECD50001CE30B /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3365A8812A8ECD50001CE30B /* Gilroy-Bold.ttf */; };
 		3365A8852A8ECD51001CE30B /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3365A8822A8ECD50001CE30B /* Gilroy-Medium.ttf */; };
 		3365A8862A8ECD51001CE30B /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3365A8832A8ECD50001CE30B /* Gilroy-Semibold.ttf */; };
+		3365A8892A8EF09D001CE30B /* PersonageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365A8882A8EF09D001CE30B /* PersonageCard.swift */; };
+		3365A88B2A8EF620001CE30B /* LabelsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365A88A2A8EF620001CE30B /* LabelsCollection.swift */; };
+		3365A88D2A8EF7B4001CE30B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3365A88C2A8EF7B4001CE30B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3365A85D2A8EBE07001CE30B /* Rick&Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick&Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3365A8602A8EBE07001CE30B /* Rick_MortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_MortyApp.swift; sourceTree = "<group>"; };
-		3365A8622A8EBE07001CE30B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3365A8622A8EBE07001CE30B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3365A8642A8EBE08001CE30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3365A8672A8EBE08001CE30B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3365A8752A8EBEE7001CE30B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		3365A8822A8ECD50001CE30B /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		3365A8832A8ECD50001CE30B /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
 		3365A8872A8ECD96001CE30B /* Rick-Morty-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rick-Morty-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3365A8882A8EF09D001CE30B /* PersonageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonageCard.swift; sourceTree = "<group>"; };
+		3365A88A2A8EF620001CE30B /* LabelsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsCollection.swift; sourceTree = "<group>"; };
+		3365A88C2A8EF7B4001CE30B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			children = (
 				3365A8802A8ECD43001CE30B /* Fonts */,
 				3365A8642A8EBE08001CE30B /* Assets.xcassets */,
+				3365A88A2A8EF620001CE30B /* LabelsCollection.swift */,
 				3365A8752A8EBEE7001CE30B /* Helper.swift */,
 			);
 			path = Assets;
@@ -119,7 +126,9 @@
 		3365A87F2A8EBF62001CE30B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3365A8622A8EBE07001CE30B /* ContentView.swift */,
+				3365A8622A8EBE07001CE30B /* MainView.swift */,
+				3365A8882A8EF09D001CE30B /* PersonageCard.swift */,
+				3365A88C2A8EF7B4001CE30B /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3365A88B2A8EF620001CE30B /* LabelsCollection.swift in Sources */,
+				3365A88D2A8EF7B4001CE30B /* DetailView.swift in Sources */,
 				3365A87C2A8EBF51001CE30B /* Model.swift in Sources */,
 				3365A8792A8EBF1C001CE30B /* NetworkManager.swift in Sources */,
-				3365A8632A8EBE07001CE30B /* ContentView.swift in Sources */,
+				3365A8892A8EF09D001CE30B /* PersonageCard.swift in Sources */,
+				3365A8632A8EBE07001CE30B /* MainView.swift in Sources */,
 				3365A8612A8EBE07001CE30B /* Rick_MortyApp.swift in Sources */,
 				3365A87E2A8EBF5B001CE30B /* ViewModel.swift in Sources */,
 				3365A8762A8EBEE7001CE30B /* Helper.swift in Sources */,

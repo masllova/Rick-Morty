@@ -30,7 +30,7 @@ extension Image {
 extension Font {
     static let detailTitle = Font.custom("Gilroy-Bold", size: 22)
     static let navTitle = Font.custom("Gilroy-Bold", size: 28)
-    static let title = Font.custom("Gilroy-Semibold", size: 17)
+    static let originalTitle = Font.custom("Gilroy-Semibold", size: 17)
     static let subTitle = Font.custom("Gilroy-Semibold", size: 16)
     static let description = Font.custom("Gilroy-Medium", size: 13)
     static let date = Font.custom("Gilroy-Medium", size: 12)
